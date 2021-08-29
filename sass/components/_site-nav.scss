@@ -1,8 +1,12 @@
 .site-nav {
   display: flex;
 }
-.site-nav__item:not(:last-child) {
+.site-nav__item {
   margin-right: 50px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
 }
 
 .site-nav__link {

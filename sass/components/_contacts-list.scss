@@ -25,8 +25,9 @@
 .contacts-list__icon {
   margin-right: 10px;
   fill: currentColor;
-}
-.contacts-list__link:hover .contacts-list__icon,
-.contacts-list__link:focus .contacts-list__icon {
-  fill: $accent-color;
+
+  .contacts-list__link:hover &,
+  .contacts-list__link:focus & {
+    fill: $accent-color;
+  }
 }

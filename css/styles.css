@@ -14,10 +14,6 @@
 /*фон хедера и футера #2F303A*/
 /*вторичный фон #F5F4FA*/
 
-html {
-  box-sizing: border-box;
-}
-
 body {
   font-family: Roboto, sans-serif;
   color: var(--primary-text-color);
@@ -51,7 +47,7 @@ img {
 /*Шапка сайта*/
 
 .header {
-  border-bottom: 1px solid rgba(236, 236, 236, 1);
+  border-bottom: 1px solid #ececec;
 }
 .container {
   width: 1200px;
@@ -78,8 +74,7 @@ img {
   color: var(--black-text-color);
 }
 
-.site-nav,
-.contacts-list {
+.site-nav {
   display: flex;
 }
 .site-nav__item:not(:last-child) {
@@ -120,6 +115,7 @@ img {
 
 .contacts-list {
   margin-left: auto;
+  display: flex;
 }
 
 .contacts-list__item + .contacts-list__item {
@@ -259,7 +255,7 @@ img {
   margin-left: 30px;
 }
 
-.overlay {
+.works__overlay {
   display: flex;
   position: absolute;
   bottom: 0;
@@ -271,7 +267,7 @@ img {
   text-decoration: none;
   background: rgba(47, 48, 58, 0.8);
 }
-.overlay__text {
+.works__text {
   display: flex;
   font-weight: 700;
   line-height: 1.14;

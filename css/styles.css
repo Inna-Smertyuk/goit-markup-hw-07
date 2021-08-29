@@ -150,14 +150,14 @@ img {
 /* Секция герой*/
 
 .hero {
-  background: var(--hero-footer-color);
+  background-color: var(--hero-footer-color);
   max-width: 1600px;
   min-height: 600px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   padding: 200px 0;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/imgoverlay.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -407,7 +407,7 @@ img {
 .address__item {
   margin-bottom: 9px;
 }
-&:last-child {
+.address__item:last-child {
   margin-bottom: 0px;
 }
 
@@ -614,6 +614,7 @@ img {
 .form-field__label {
   font-size: 12px;
   font-weight: 400;
+  margin-bottom: 4px;
   line-height: 1.2;
   letter-spacing: 0.01em;
   color: var(--primary-text-color);
@@ -642,9 +643,6 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form-field__label {
-  margin-bottom: 4px;
-}
 .form-field__input {
   display: block;
   outline: none;
@@ -741,8 +739,11 @@ img {
   justify-content: center;
   margin-bottom: 50px;
 }
-.filter__item:not(:last-child) {
+.filter__item {
   margin-right: 8px;
+}
+.filter__item:last-child {
+  margin-right: 0px;
 }
 .filter__button {
   color: var(--title-text-color);

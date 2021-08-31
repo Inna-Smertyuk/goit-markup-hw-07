@@ -26,7 +26,7 @@
     color: $accent-color;
     cursor: pointer;
   }
-  &.current {
+  &.site-nav__link--current {
     color: $accent-color;
     &::after {
       content: '';

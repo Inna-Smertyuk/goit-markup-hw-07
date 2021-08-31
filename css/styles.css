@@ -101,10 +101,10 @@ img {
   color: var(--accent-color);
   cursor: pointer;
 }
-.site-nav__link.current {
+.site-nav__link--current {
   color: var(--accent-color);
 }
-.site-nav__link.current::after {
+.site-nav__link--current::after {
   content: '';
 
   position: absolute;
@@ -236,7 +236,7 @@ img {
 
 /*Наши услуги*/
 
-.section .no-padding {
+.section--no-padding {
   padding-top: 0;
 }
 .section__title {
@@ -281,7 +281,7 @@ img {
 
 /*Наша команда*/
 
-.section-team {
+.section--background {
   background: #f5f4fa;
 }
 
@@ -311,7 +311,7 @@ img {
   text-align: center;
 }
 
-.team__subtitle {
+.team__description {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -773,7 +773,7 @@ img {
   margin-top: -30px;
   margin-left: -30px;
 }
-.portfolio > .portfolio__list {
+.portfolio > .portfolio__item {
   margin-top: 30px;
   margin-left: 30px;
 }
